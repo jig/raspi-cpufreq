@@ -15,7 +15,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("CPU frequency is %.1f GHz", float64(freq)/1_000_000)
+	log.Printf("CPU frequency is %.1f GHz (range from %.1f GHz to %.1f GHz)", float64(freq)/1_000_000, float64(minFreq)/1_000_000, float64(maxFreq)/1_000_000)
 }
 
 ```
@@ -33,5 +33,5 @@ freq
 Example output:
 
 ```bash
-2023/08/20 18:01:05 CPU frequency is 0.6 GHz
+2023/08/20 18:14:59 CPU frequency is 1.5 GHz (range from 0.6 GHz to 1.5 GHz)
 ```
